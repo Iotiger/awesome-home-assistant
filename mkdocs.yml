@@ -1,0 +1,89 @@
+# Project information
+site_name: "Awesome Home Assistant"
+site_url: "https://www.awesome-ha.com"
+site_description: "A curated list of awesome Home Assistant resources for automating every aspect of your home"
+site_author: "Franck Nijhof"
+copyright: "Copyright 2018 - 2022 - Franck Nijhof. Creative Commons Attribution 4.0."
+
+# Repository
+repo_name: "awesome-home-assistant"
+repo_url: "https://github.com/frenck/awesome-home-assistant"
+
+# Theme configuration
+theme:
+  name: "material"
+  logo: "https://www.awesome-ha.com/images/icon.svg"
+  language: "en"
+  palette:
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: "light-blue"
+      accent: "pink"
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - scheme: default
+      primary: "light-blue"
+      accent: "pink"
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+
+  features:
+    - navigation.expand
+    - navigation.instant
+    - navigation.tabs
+    - navigation.tracking
+    - search.highlight
+    - search.suggest
+    - toc.integrate
+extra_css:
+  - css/extra.css
+
+# Customization
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: "https://github.com/frenck"
+    - icon: fontawesome/brands/twitter
+      link: "https://twitter.com/frenck"
+    - icon: fontawesome/brands/instagram
+      link: "https://instagram.com/frenck"
+    - icon: fontawesome/brands/twitch
+      link: "https://twitch.tv/frenck"
+    - icon: fontawesome/brands/youtube
+      link: "https://youtube.com/frenck"
+    - icon: fontawesome/brands/linkedin
+      link: "https://www.linkedin.com/in/frenck"
+
+# Extensions
+markdown_extensions:
+  - toc:
+      permalink: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - mdx_truly_sane_lists
+
+# The pages to serve
+nav:
+  - "The Awesome List": "index.md"
+  - "Contributing": "contributing.md"
+
+plugins:
+  - git-revision-date-localized:
+      type: timeago
